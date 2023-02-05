@@ -159,18 +159,21 @@ class Histogram(displayio.TileGrid):
         :return: None
         """
 
-        distribution = {i: self._data_raw.count(i) / len(self._data_raw) for i in set(self._data_raw)}
+        distribution = {
+            i: self._data_raw.count(i) / len(self._data_raw)
+            for i in set(self._data_raw)
+        }
         distribution2 = {i: self._data_raw.count(i) for i in set(self._data_raw)}
 
         print("Distribution in % of your data")
         print(distribution)
-        print("-"*40)
+        print("-" * 40)
         print("Frequency")
         print(distribution2)
-        print("-"*40)
+        print("-" * 40)
         print("Recommended bins number for your data")
         print(len(self.bin_data))
-        print("-"*40)
+        print("-" * 40)
         print("Bins distribution")
         print(self.bin_data)
 
@@ -181,8 +184,13 @@ class Histogram(displayio.TileGrid):
         """
 
         for i in range(self._numbins):
-            self._draw_rectangle(self._xstart+(i * self._graphx), self._yorigin, self._graphx,
-                                self._graphy*int(self.bin_data[i]), 3)
+            self._draw_rectangle(
+                self._xstart + (i * self._graphx),
+                self._yorigin,
+                self._graphx,
+                self._graphy * int(self.bin_data[i]),
+                3,
+            )
 
     def _draw_rectangle(self, x, y, width, height, color):
         """
@@ -209,7 +217,9 @@ class Histogram(displayio.TileGrid):
         if rule == 0:  # Sturge’s rule
             bin_count = int(np.ceil(np.log2(len(data))) + 1)
         if rule == 1:  # Normal’s rule
-            bin_count = int(np.ceil(abs(np.max(data) - np.min(data)) / np.sqrt(len(data))))
+            bin_count = int(
+                np.ceil(abs(np.max(data) - np.min(data)) / np.sqrt(len(data)))
+            )
 
         start = min(data)
         distance = int(np.ceil(abs(max(data) - min(data)) / bin_count))
