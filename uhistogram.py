@@ -53,8 +53,8 @@ class Histogram(displayio.TileGrid):
 
     **Quickstart: Importing and using uhistogram**
 
-    Here is one way of importing the `Histogram` class so you can use it as
-    the name ``Histogram``:
+    Here is one way of importing the `uhistogram.Histogram` class so you can use it as
+    the name ``uhistogram.Histogram``:
 
     .. code-block:: python
 
@@ -79,7 +79,7 @@ class Histogram(displayio.TileGrid):
 
     **Summary: Histogram Features and input variables**
 
-    The `uboxplot` TileGrid has some options for controlling its position, visible appearance,
+    The `uhistogram` TileGrid has some options for controlling its position, visible appearance,
     through a collection of input variables:
 
         - **position**: ``x``, ``y``
@@ -89,7 +89,7 @@ class Histogram(displayio.TileGrid):
         - **color**: ``line_color``
 
 
-    .. figure:: histogram.jpg
+    .. figure:: histogram.png
        :scale: 100 %
        :figwidth: 50%
        :align: center
