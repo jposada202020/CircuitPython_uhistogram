@@ -24,6 +24,7 @@ Introduction
 
 CircuitPython library to calculate and graph histograms
 
+.. image:: https://github.com/jposada202020/CircuitPython_uhistogram/blob/master/docs/histogram.png
 
 Dependencies
 =============
