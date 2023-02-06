@@ -206,17 +206,25 @@ class Histogram(displayio.TileGrid):
         """
         Function that calculate the number of bins for the sample. you could use two rules, changing
         the parameter rule.
-        rule=0 applies Sturge's rule
-        rule=1 applies standard rule
+        rule = 0 applies Sturge's rule
+        rule = 1 applies square root choice
+        rule = 2 will choose the best criteria to be applied.
+                for data size < 30 --> Square Root Choice
+                for data size > 30 --> Sturg's Rule
 
         :param data: data to be analyzed
         :param rule: desired rule. Defaults to 0.
         :return: bin calculated data
 
         """
+        if rule == 2:  # Normal’s rule
+            if len(data) > 30:
+                rule = 0
+            else:
+                rule = 1
         if rule == 0:  # Sturge’s rule
             bin_count = int(np.ceil(np.log2(len(data))) + 1)
-        if rule == 1:  # Normal’s rule
+        if rule == 1:  # Square Root Choice’s rule
             bin_count = int(
                 np.ceil(abs(np.max(data) - np.min(data)) / np.sqrt(len(data)))
             )
