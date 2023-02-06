@@ -209,8 +209,8 @@ class Histogram(displayio.TileGrid):
         rule = 0 applies Sturge's rule
         rule = 1 applies square root choice
         rule = 2 will choose the best criteria to be applied.
-                for data size < 30 --> Square Root Choice
-                for data size > 30 --> Sturg's Rule
+        for data size < 30 --> Square Root Choice
+        for data size > 30 --> Sturg's Rule
 
         :param data: data to be analyzed
         :param rule: desired rule. Defaults to 0.
