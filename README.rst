@@ -7,10 +7,13 @@ Introduction
     :alt: Documentation Status
 
 
+.. image:: https://img.shields.io/pypi/v/circuitpython-uhistogram.svg
+    :alt: latest version on PyPI
+    :target: https://pypi.python.org/pypi/circuitpython-uhistogram
 
-.. image:: https://img.shields.io/discord/327254708534116352.svg
-    :target: https://adafru.it/discord
-    :alt: Discord
+.. image:: https://static.pepy.tech/personalized-badge/circuitpython-uhistogram?period=total&units=international_system&left_color=grey&right_color=blue&left_text=Pypi%20Downloads
+    :alt: Total PyPI downloads
+    :target: https://pepy.tech/project/circuitpython-uhistogram
 
 
 .. image:: https://github.com/jposada202020/CircuitPython_uhistogram/workflows/Build%20CI/badge.svg
