@@ -1,5 +1,5 @@
-BoxPlot Library
-================
+Histogram Library
+==================
 
 .. automodule:: uhistogram
     :members:
