@@ -1,4 +1,3 @@
-# SPDX-FileCopyrightText: 2022 Alec Delaney, written for Adafruit Industries
 # SPDX-FileCopyrightText: Copyright (c) 2023 Jose D. Montoya
 #
 # SPDX-License-Identifier: MIT
@@ -20,12 +19,9 @@ authors = [
 ]
 urls = {Homepage = "https://github.com/jposada202020/CircuitPython_uhistogram"}
 keywords = [
-    "adafruit",
-    "blinka",
     "circuitpython",
     "micropython",
     "uhistogram",
-    "circuitpython",
     "graphs",
     "statistical",
     "histogram",

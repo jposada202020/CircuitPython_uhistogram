@@ -16,11 +16,6 @@ Implementation Notes
 
 Depends on CircuitPyton version 8.0.0
 
-**Software and Dependencies:**
-
-* Adafruit CircuitPython firmware for the supported boards:
-  https://circuitpython.org/downloads
-
 
 """
 
@@ -37,7 +32,6 @@ __version__ = "0.0.0+auto.0"
 __repo__ = "https://github.com/jposada202020/CircuitPython_uhistogram.git"
 
 
-# pylint: disable=too-many-instance-attributes, too-many-arguments, invalid-name
 class Histogram(displayio.TileGrid):
     """A Histogram TileGrid. The origin is set using ``x`` and ``y``.
 

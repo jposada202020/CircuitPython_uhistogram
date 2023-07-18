@@ -22,7 +22,6 @@ my_group = displayio.Group()
 my_group.append(my_box)
 
 for i in range(my_box._numbins):
-
     text_area = bitmap_label.Label(terminalio.FONT, text=str(int(my_box.bin_data[i])))
     text_area.x = (
         50 + my_box._xstart + int(i * 1 * my_box._graphx) + my_box._graphx // 2
